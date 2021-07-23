@@ -3,12 +3,15 @@
 {% block title %}TODO List API{% endblock title %}
 
 {% block content %}
-    <h2>TODO List API</h2>
-    <ul>
-            <li><a href="/admin">Painel administrador</a></li>
-            <li><a href="/api">Raiz da API</a></li>
-            <li><a href="/api/api-auth/login/?next=/api/">Login</a></li>
+<div class="container">
+
+    <h2 class="text-center">TODO List API</h2>
+    <ul class="list-group">
+            <li class="list-group-item list-group-item-action"><a href="/admin">Painel administrador</a></li>
+            <li class="list-group-item list-group-item-action"><a href="/api">Raiz da API</a></li>
+            <li class="list-group-item list-group-item-action"><a href="/api/api-auth/login/?next=/api/">Login</a></li>
             
     </ul>
-    <p>Todas as rotas podem ser acessadas por autenticação de sessão ou token</p>
+    <p class="text-body">Todas as rotas podem ser acessadas por autenticação de sessão ou token</p>
+</div>
 {% endblock %}
